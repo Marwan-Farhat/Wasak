@@ -142,13 +142,20 @@
                                 @if($socail->facebook)
                                 <li>
                                     <a href="{{ $socail->facebook }}" class="text-decoration-none" style="background-color:#0a1c3a; color:#fff; display:flex; align-items:center; justify-content:center; width:30px; height:30px;" target="_blank">
-                                        <ion-icon name="logo-linkedin" style="font-size:18px;"></ion-icon>
+                                        <i class="fa-brands fa-facebook" style="font-size:18px;"></i>
                                     </a>
                                 </li>
                                 @endif
                                 @if($socail->linkedIn)
                                 <li>
                                     <a href="{{ $socail->linkedIn }}" class="text-decoration-none" style="background-color:#0a1c3a; color:#fff; display:flex; align-items:center; justify-content:center; width:30px; height:30px;" target="_blank">
+                                        <ion-icon name="logo-linkedin" style="font-size:18px;"></ion-icon>
+                                    </a>
+                                </li>
+                                @endif
+                                @if($socail->youtube)
+                                <li>
+                                    <a href="{{ $socail->youtube }}" class="text-decoration-none" style="background-color:#0a1c3a; color:#fff; display:flex; align-items:center; justify-content:center; width:30px; height:30px;" target="_blank">
                                         <ion-icon name="logo-youtube" style="font-size:18px;"></ion-icon>
                                     </a>
                                 </li>
@@ -157,13 +164,6 @@
                                 <li>
                                     <a href="{{ $socail->instagram }}" class="text-decoration-none" style="background-color:#0a1c3a; color:#fff; display:flex; align-items:center; justify-content:center; width:30px; height:30px;" target="_blank">
                                         <ion-icon name="logo-instagram" style="font-size:18px;"></ion-icon>
-                                    </a>
-                                </li>
-                                @endif
-                                @if($socail->whatsapp)
-                                <li>
-                                    <a href="{{ $socail->whatsapp }}" class="text-decoration-none" style="background-color:#0a1c3a; color:#fff; display:flex; align-items:center; justify-content:center; width:30px; height:30px;" target="_blank">
-                                        <i class="fa-brands fa-facebook" style="font-size:18px;"></i>
                                     </a>
                                 </li>
                                 @endif
@@ -178,6 +178,13 @@
                                 <li>
                                     <a href="{{ $socail->tiktok }}" class="text-decoration-none" style="background-color:#0a1c3a; color:#fff; display:flex; align-items:center; justify-content:center; width:30px; height:30px;" target="_blank">
                                         <i class="fa-brands fa-tiktok" style="font-size:18px;"></i>
+                                    </a>
+                                </li>
+                                @endif
+                                @if($socail->snapchat)
+                                <li>
+                                    <a href="{{ $socail->snapchat }}" class="text-decoration-none" style="background-color:#0a1c3a; color:#fff; display:flex; align-items:center; justify-content:center; width:30px; height:30px;" target="_blank">
+                                        <i class="fa-brands fa-snapchat" style="font-size:18px;"></i>
                                     </a>
                                 </li>
                                 @endif

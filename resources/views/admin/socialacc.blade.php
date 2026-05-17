@@ -70,8 +70,17 @@
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                             <div class="">
                                 <div class="d-flex flex-column gap-4c">
-                                    <label class="fs-12 fw-400-20px text-1 text_cap">يوتيوب</label>
+                                    <label class="fs-12 fw-400-20px text-1 text_cap">لينكدإن</label>
                                     <input type="text" class="form-control fw-400-24px gray-text-2 pad-8-16" name="linkedIn" value="{{ $data->linkedIn }}"
+                                        placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="">
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-400-20px text-1 text_cap">يوتيوب</label>
+                                    <input type="text" class="form-control fw-400-24px gray-text-2 pad-8-16" name="youtube" value="{{ $data->youtube }}"
                                         placeholder="">
                                 </div>
                             </div>
@@ -89,18 +98,8 @@
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                             <div class="">
                                 <div class="d-flex flex-column gap-4c">
-                                    <label class="fs-12 fw-400-20px text-1 text_cap">لينكدان</label>
-                                    <input type="text" class="form-control fw-400-24px gray-text-2 pad-8-16" name="facebook" value="{{ $data->facebook }}"
-                                        placeholder="">
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                            <div class="">
-                                <div class="d-flex flex-column gap-4c">
                                     <label class="fs-12 fw-400-20px text-1 text_cap">فيسبوك</label>
-                                    <input type="text" class="form-control fw-400-24px gray-text-2 pad-8-16" name="whatsapp" value="{{ $data->whatsapp }}"
+                                    <input type="text" class="form-control fw-400-24px gray-text-2 pad-8-16" name="facebook" value="{{ $data->facebook }}"
                                         placeholder="">
                                 </div>
                             </div>
@@ -119,6 +118,15 @@
                                 <div class="d-flex flex-column gap-4c">
                                     <label class="fs-12 fw-400-20px text-1 text_cap">تيك توك</label>
                                     <input type="text" class="form-control fw-400-24px gray-text-2 pad-8-16" name="tiktok" value="{{ $data->tiktok }}"
+                                        placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="">
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-400-20px text-1 text_cap">سناب شات</label>
+                                    <input type="text" class="form-control fw-400-24px gray-text-2 pad-8-16" name="snapchat" value="{{ $data->snapchat }}"
                                         placeholder="">
                                 </div>
                             </div>

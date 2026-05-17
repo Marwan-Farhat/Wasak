@@ -13,11 +13,12 @@ class Social extends Model
     protected $fillable = [
         'addedBy',
         'linkedIn',
+        'youtube',
         'twitter',
         'facebook',
         'instagram',
-        'whatsapp',
         'tiktok',
         'whatsapp_url',
+        'snapchat',
     ];
 }

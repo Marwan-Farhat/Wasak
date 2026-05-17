@@ -24,12 +24,13 @@ class SocialController extends Controller
                 }
                 $data->update([
                     'linkedIn' => $request->linkedIn,
+                    'youtube' => $request->youtube,
                     'twitter' => $request->twitter,
                     'facebook' => $request->facebook,
                     'instagram' => $request->instagram,
-                    'whatsapp' => $request->whatsapp,
                     'tiktok' => $request->tiktok,
                     'whatsapp_url' => $request->whatsapp_url,
+                    'snapchat' => $request->snapchat,
                     'addedBy' => Auth::user()->id,
                 ]);
                 return redirect()->back()->with('success',' تم تحديث حساب Social بنجاح');
