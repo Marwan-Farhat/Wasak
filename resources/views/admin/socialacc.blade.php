@@ -10,7 +10,7 @@
     <script src="https://cdn.ckeditor.com/ckeditor5/40.0.0/classic/ckeditor.js"></script>
     <!-- for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css  " />
-    <link rel="shortcut icon" href="img/admin.png" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="{{ url('favicon.ico') }}?v=2">
     <title>الحسابات الاجتماعية</title>
 </head>
 
@@ -61,7 +61,7 @@
                             <div class="">
                                 <div class="d-flex flex-column gap-4c">
                                     <label class="fs-12 fw-400-20px text-1 text_cap">منصه إكس</label>
-                                    <input type="text" name="twitter" required value="{{ $data->twitter }}" class="form-control fw-400-24px gray-text-2 pad-8-16"
+                                    <input type="text" name="twitter" value="{{ $data->twitter }}" class="form-control fw-400-24px gray-text-2 pad-8-16"
                                         placeholder="">
                                 </div>
 
@@ -71,7 +71,7 @@
                             <div class="">
                                 <div class="d-flex flex-column gap-4c">
                                     <label class="fs-12 fw-400-20px text-1 text_cap">يوتيوب</label>
-                                    <input type="text" class="form-control fw-400-24px gray-text-2 pad-8-16" name="linkedIn" required value="{{ $data->linkedIn }}"
+                                    <input type="text" class="form-control fw-400-24px gray-text-2 pad-8-16" name="linkedIn" value="{{ $data->linkedIn }}"
                                         placeholder="">
                                 </div>
                             </div>
@@ -80,7 +80,7 @@
                             <div class="">
                                 <div class="d-flex flex-column gap-4c">
                                     <label class="fs-12 fw-400-20px text-1 text_cap">انستغرام</label>
-                                    <input type="text" class="form-control fw-400-24px gray-text-2 pad-8-16" name="instagram" value="{{ $data->instagram }}" required
+                                    <input type="text" class="form-control fw-400-24px gray-text-2 pad-8-16" name="instagram" value="{{ $data->instagram }}"
                                         placeholder="">
                                 </div>
 
@@ -89,11 +89,38 @@
                         <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                             <div class="">
                                 <div class="d-flex flex-column gap-4c">
-                                    <label class="fs-12 fw-400-20px text-1 text_cap">ينكدين</label>
-                                    <input type="text" class="form-control fw-400-24px gray-text-2 pad-8-16" name="facebook" value="{{ $data->facebook }}" required
+                                    <label class="fs-12 fw-400-20px text-1 text_cap">لينكدان</label>
+                                    <input type="text" class="form-control fw-400-24px gray-text-2 pad-8-16" name="facebook" value="{{ $data->facebook }}"
                                         placeholder="">
                                 </div>
 
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="">
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-400-20px text-1 text_cap">فيسبوك</label>
+                                    <input type="text" class="form-control fw-400-24px gray-text-2 pad-8-16" name="whatsapp" value="{{ $data->whatsapp }}"
+                                        placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="">
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-400-20px text-1 text_cap">واتساب</label>
+                                    <input type="text" class="form-control fw-400-24px gray-text-2 pad-8-16" name="whatsapp_url" value="{{ $data->whatsapp_url }}"
+                                        placeholder="https://wa.me/+966XXXXXXXXX">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="">
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-400-20px text-1 text_cap">تيك توك</label>
+                                    <input type="text" class="form-control fw-400-24px gray-text-2 pad-8-16" name="tiktok" value="{{ $data->tiktok }}"
+                                        placeholder="">
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-12 mt-5">

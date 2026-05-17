@@ -14,20 +14,6 @@ class SocialController extends Controller
     {
         // if (Auth::guard('api')->user()->role == 'admin') {
             try {
-                if ($request->linkedIn == null) {
-                    return redirect()->back()->with('error','  مطلوب لينكد إن');
-                }
-                if ($request->twitter == null) {
-                    return redirect()->back()->with('error','  مطلوب تويتر');
-                }
-                if ($request->facebook == null) {
-                    return redirect()->back()->with('error',' مطلوب سناب شات');
-                }
-                if ($request->instagram == null) {
-
-                    return redirect()->back()->with('error',' مطلوب انستغرام');
-                }
-
                 if ($request->id == null) {
                     return redirect()->back()->with('error',' مطلوب معرف');
                 }
@@ -41,9 +27,10 @@ class SocialController extends Controller
                     'twitter' => $request->twitter,
                     'facebook' => $request->facebook,
                     'instagram' => $request->instagram,
+                    'whatsapp' => $request->whatsapp,
+                    'tiktok' => $request->tiktok,
+                    'whatsapp_url' => $request->whatsapp_url,
                     'addedBy' => Auth::user()->id,
-                    // 'whatsapp' => $request->whatsapp,
-
                 ]);
                 return redirect()->back()->with('success',' تم تحديث حساب Social بنجاح');
             } catch (Exception $e) {

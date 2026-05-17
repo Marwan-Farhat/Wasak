@@ -10,7 +10,7 @@
     <script src="https://cdn.ckeditor.com/ckeditor5/40.0.0/classic/ckeditor.js"></script>
     <!-- for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css  " />
-    <link rel="shortcut icon" href="img/admin.png" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="{{ url('favicon.ico') }}?v=2">
     <title>{{ __('welcome.فريقنا المتميز') }}</title>
 </head>
 
@@ -59,7 +59,7 @@
                         <div class="col-lg-12">
 
                             <div class="d-flex flex-column gap-4c">
-                                <label class="fs-12 fw-400-20px text-1">{{ __('welcome.الوصف باللغة الإنجليزية') }}</label>
+                                <label class="fs-12 fw-400-20px text-1">{{ __('welcome.الوصف باللغة العربية') }}</label>
                                 <textarea class="form-control" id="editor" name="description" required rows="7">{{ $data->description }}</textarea>
                             </div>
                             <div class="d-flex flex-column gap-4c my-3">
@@ -141,8 +141,9 @@
                             }
                         }
                     })
-                    .then( /* ... */)
-                    .catch( /* ... */);
+                    .then(editor => { ckInstances['editor'] = editor; })
+                .catch(console.error)
+                    
             </script>
             <script>
                 ClassicEditor
@@ -154,8 +155,9 @@
                             }
                         }
                     })
-                    .then( /* ... */)
-                    .catch( /* ... */);
+                    .then(editor => { ckInstances['editor2'] = editor; })
+                .catch(console.error)
+                    
             </script>
             <link rel="stylesheet" type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
@@ -194,6 +196,7 @@
                     $($(this).attr('href')).collapse('show');
                 });
             });
+        
         </script>
 </body>
 

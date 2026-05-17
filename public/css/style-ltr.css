@@ -295,14 +295,19 @@ footer a:hover {
 }
 
 .navbar-brand {
-  width: 250px !important;
-  height: auto !important;
-  margin: 20px 0px;
+  width: auto !important;
+  height: 85px !important;
+  margin: 0;
+  padding: 0;
+  display: flex !important;
+  align-items: center !important;
 }
 
 .navbar-brand img {
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 85px;
+  object-fit: cover;
+  object-position: center;
 }
 .footer_logo {
   width: 200px !important;

@@ -96,7 +96,7 @@ class AdminController extends Controller
             return view('admin.AboutCompany',['data'=>$data]);
         }
         } else {
-            return redirect('sign-in');
+            return redirect('login');
         }
     }
     //ourPartners
@@ -107,7 +107,7 @@ class AdminController extends Controller
         $status = ShowStatus::find('1c00a649-a4b9-4f71-a012-e27528447680');
         return view('admin.partners',['partners'=>$records,'status'=>$status]);
         } else {
-            return redirect('sign-in');
+            return redirect('login');
         }
     }
     //management
@@ -118,7 +118,7 @@ class AdminController extends Controller
         $status = ShowStatus::find('1c00a649-a4b9-4f71-a012-e27528447680');
         return view('admin.management',['records'=>$records,'status'=>$status]);
         } else {
-            return redirect('sign-in');
+            return redirect('login');
         }
     }
     //achievements
@@ -135,7 +135,7 @@ class AdminController extends Controller
             return view('admin.achievements',['data'=>$data,'status'=>$status]);
         }
         } else {
-            return redirect('sign-in');
+            return redirect('login');
         }
     }
     //counter
@@ -152,7 +152,7 @@ class AdminController extends Controller
             return view('admin.counter',['data'=>$data,'status' => $status]);
         }
         } else {
-            return redirect('sign-in');
+            return redirect('login');
         }
     }
     //history
@@ -168,7 +168,7 @@ class AdminController extends Controller
             return view('admin.history',['data'=>$data]);
         }
         } else {
-            return redirect('sign-in');
+            return redirect('login');
         }
     }
     //vision
@@ -184,7 +184,7 @@ class AdminController extends Controller
             return view('admin.vision',['data'=>$data]);
         }
         } else {
-            return redirect('sign-in');
+            return redirect('login');
         }
     }
     //goal
@@ -200,7 +200,7 @@ class AdminController extends Controller
             return view('admin.goal',['data'=>$data]);
         }
         } else {
-            return redirect('sign-in');
+            return redirect('login');
         }
     }
     //rateus
@@ -216,7 +216,7 @@ class AdminController extends Controller
             return view('admin.rateus',['data'=>$data]);
         }
         } else {
-            return redirect('sign-in');
+            return redirect('login');
         }
     }
     //aboutus
@@ -232,7 +232,7 @@ class AdminController extends Controller
             return view('admin.aboutus',['data'=>$data]);
         }
         } else {
-            return redirect('sign-in');
+            return redirect('login');
         }
     }
     //distinguishedteam
@@ -248,7 +248,7 @@ class AdminController extends Controller
             return view('admin.distinguishedteam',['data'=>$data]);
         }
         } else {
-            return redirect('sign-in');
+            return redirect('login');
         }
     }
     //servicesreq
@@ -258,7 +258,7 @@ class AdminController extends Controller
             $records = ServiceRequest::with('services')->orderBy('created_at','desc')->get();
         return view('admin.servicesreq',['records'=>$records]);
         } else {
-            return redirect('sign-in');
+            return redirect('login');
         }
     }
     //recruitment
@@ -269,7 +269,7 @@ class AdminController extends Controller
 
         return view('admin.recruitment',['records'=>$records]);
         } else {
-            return redirect('sign-in');
+            return redirect('login');
         }
     }
     //contact
@@ -285,7 +285,7 @@ class AdminController extends Controller
             return view('admin.contact',['data'=>$data]);
         }
         } else {
-            return redirect('sign-in');
+            return redirect('login');
         }
     }
     //socialacc
@@ -301,7 +301,7 @@ class AdminController extends Controller
             return view('admin.socialacc',['data'=>$data]);
         }
         } else {
-            return redirect('sign-in');
+            return redirect('login');
         }
     }
     //blogpage
@@ -312,7 +312,7 @@ class AdminController extends Controller
 
         return view('admin.blogpage',['records'=>$records]);
         } else {
-            return redirect('sign-in');
+            return redirect('login');
         }
     }
     //servicespage
@@ -325,7 +325,7 @@ class AdminController extends Controller
 
         return view('admin.servicespage',['records'=>$records,'data'=>$data,'servicetype'=>$servicetype,'typeID' => $id]);
         } else {
-            return redirect('sign-in');
+            return redirect('login');
         }
     }
     //titles

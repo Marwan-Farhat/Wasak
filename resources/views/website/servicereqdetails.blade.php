@@ -15,6 +15,7 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="{{ url('favicon.ico') }}?v=2">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Our Services</title>
     <link rel="stylesheet" type="text/css" href="{{ url('css/bootstrap.min.css') }}">
@@ -29,7 +30,6 @@
     <link rel="stylesheet" href="{{ url('css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ url('css/owl.theme.default.min.css') }}">
     <script src="https://kit.fontawesome.com/00b231478f.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="{{ url('img/admin.png') }}" type="image/x-icon">
 </head>
 
 <body>

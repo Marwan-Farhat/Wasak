@@ -8,6 +8,7 @@ $ach = ach();
 
 <head>
     <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="{{ url('favicon.ico') }}?v=2">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Our Quality</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -22,7 +23,6 @@ $ach = ach();
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <script src="https://kit.fontawesome.com/00b231478f.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="img/admin.png" type="image/x-icon">
 </head>
 
 <body>

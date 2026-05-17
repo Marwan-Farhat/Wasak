@@ -131,27 +131,56 @@
                     <div class>
                         <h2 class="text-dark-clr mb-3 text-capitalize">{{ __('welcome.تابعنا على') }}</h2>
                         <div class="social-footer mt-4">
-                            <ul class="d-flex align-items-center">
+                            <ul class="list-unstyled d-flex flex-wrap gap-3 m-0 p-0">
+                                @if($socail->twitter)
                                 <li>
-                                    <a href="{{ $socail->twitter }}" class="text-decoration-none me-3" style="background-color: #0a1c3a">
-                                        <i class="fa-brands fa-x-twitter text-white"></i>
+                                    <a href="{{ $socail->twitter }}" class="text-decoration-none" style="background-color:#0a1c3a; color:#fff; display:flex; align-items:center; justify-content:center; width:30px; height:30px;" target="_blank">
+                                        <i class="fa-brands fa-x-twitter" style="font-size:18px;"></i>
                                     </a>
                                 </li>
+                                @endif
+                                @if($socail->facebook)
                                 <li>
-                                    <a href="{{ $socail->facebook }}" class="text-decoration-none me-3" style="background-color: #0a1c3a">
-                                        <ion-icon name="logo-linkedin"></ion-icon>
+                                    <a href="{{ $socail->facebook }}" class="text-decoration-none" style="background-color:#0a1c3a; color:#fff; display:flex; align-items:center; justify-content:center; width:30px; height:30px;" target="_blank">
+                                        <ion-icon name="logo-linkedin" style="font-size:18px;"></ion-icon>
                                     </a>
                                 </li>
-                               <li>
-                                    <a href="{{ $socail->linkedIn }}" class="text-decoration-none me-3" style="background-color: #0a1c3a">
-                                        <ion-icon name="logo-youtube"></ion-icon>
+                                @endif
+                                @if($socail->linkedIn)
+                                <li>
+                                    <a href="{{ $socail->linkedIn }}" class="text-decoration-none" style="background-color:#0a1c3a; color:#fff; display:flex; align-items:center; justify-content:center; width:30px; height:30px;" target="_blank">
+                                        <ion-icon name="logo-youtube" style="font-size:18px;"></ion-icon>
                                     </a>
                                 </li>
+                                @endif
+                                @if($socail->instagram)
                                 <li>
-                                    <a href="{{ $socail->instagram }}" class="text-decoration-none me-3" style="background-color: #0a1c3a">
-                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    <a href="{{ $socail->instagram }}" class="text-decoration-none" style="background-color:#0a1c3a; color:#fff; display:flex; align-items:center; justify-content:center; width:30px; height:30px;" target="_blank">
+                                        <ion-icon name="logo-instagram" style="font-size:18px;"></ion-icon>
                                     </a>
-                                </li> 
+                                </li>
+                                @endif
+                                @if($socail->whatsapp)
+                                <li>
+                                    <a href="{{ $socail->whatsapp }}" class="text-decoration-none" style="background-color:#0a1c3a; color:#fff; display:flex; align-items:center; justify-content:center; width:30px; height:30px;" target="_blank">
+                                        <i class="fa-brands fa-facebook" style="font-size:18px;"></i>
+                                    </a>
+                                </li>
+                                @endif
+                                @if($socail->whatsapp_url)
+                                <li>
+                                    <a href="{{ $socail->whatsapp_url }}" class="text-decoration-none" style="background-color:#0a1c3a; color:#fff; display:flex; align-items:center; justify-content:center; width:30px; height:30px;" target="_blank">
+                                        <i class="fa-brands fa-whatsapp" style="font-size:18px;"></i>
+                                    </a>
+                                </li>
+                                @endif
+                                @if($socail->tiktok)
+                                <li>
+                                    <a href="{{ $socail->tiktok }}" class="text-decoration-none" style="background-color:#0a1c3a; color:#fff; display:flex; align-items:center; justify-content:center; width:30px; height:30px;" target="_blank">
+                                        <i class="fa-brands fa-tiktok" style="font-size:18px;"></i>
+                                    </a>
+                                </li>
+                                @endif
                             </ul>
                         </div>
                     </div>
@@ -167,7 +196,7 @@
                             <ul class="list-unstyled footerList">
                                 <li>
                                     <p class="mb-0 fs-4 text-dark-clr" >
-                                        © 2023 | <a href="#"
+                                        © 2026 | <a href="#"
                                             class="text-decoration-none text-white" >
                                             {{ __('welcome.شركة عكس لتقنية المعلومات. كل الحقوق محفوظة') }}
                                         </a>

@@ -10,7 +10,7 @@
     <!-- for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css  " />
     <script src="https://cdn.ckeditor.com/ckeditor5/40.0.0/classic/ckeditor.js"></script>
-    <link rel="shortcut icon" href="img/admin.png" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="{{ url('favicon.ico') }}?v=2">
     <title>{{ __('welcome.الإنجازات') }}</title>
 </head>
 
@@ -94,7 +94,7 @@
                             <div class="d-flex flex-column gap-24 pt-lg-5">
                                 <div class="row gap-16 g-5">
                                     <div class="col-lg-12">
-                                        <h5 class="fs-18 my-2 text_cap">{{ __('welcome.الوصف باللغة الإنجليزية') }}</h5>
+                                        <h5 class="fs-18 my-2 text_cap">{{ __('welcome.الوصف باللغة العربية') }}</h5>
                                         <div class="d-flex flex-column gap-4c">
                                             <label class="fs-12 fw-400-20px text-1">Description (In English)</label>
                                             <textarea class="form-control" id="editor" name="description" required rows="6">{{ $data->description }}</textarea>

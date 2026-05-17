@@ -19,7 +19,7 @@
     
 /* Force custom navbar background and text color */
 nav.custom-navbar {
-    background-color: #0a1c3a !important; /* Your custom background color */
+    background-color: #0a1c3a !important;
     height: 85px;
 }
 

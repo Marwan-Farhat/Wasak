@@ -15,6 +15,7 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="{{ url('favicon.ico') }}?v=2">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About Us</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -30,7 +31,6 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <script src="https://kit.fontawesome.com/00b231478f.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="img/admin.png" type="image/x-icon">
     <style>
         .download-section{
             text-align: left;
@@ -53,36 +53,7 @@
         <!-- mobile menu end -->
     </header>
     <section class="bg-header my-5">
-        <div class="container">
-            @if(App::isLocale('ar'))
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="download-section text-start">
-                        {{--  <a href="{{ $about->image }}" download class="text-decoration-none fs-3">
-                            {{ __('welcome.pdf text') }}
-                        </a>  --}}
-                        <span class="flip-btn1 fs-16 my-3 mb-3">
-                            <a href="{{ $about->image }}" download class="text-decoration-none">
-                                {{ __('welcome.pdf text') }}  <i class="fa-solid fa-download"></i>
-                            </a>
-                        </span>
-                        {{--  <a href="{{ $about->image }}" class="btn download" download></a>  --}}
-                    </div>
-                </div>
-            </div>
-                @else
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="download-section text-end">
-                            <span class="flip-btn1 fs-16 my-3 mb-3">
-                                <a href="{{ $about->image }}" download class="text-decoration-none">
-                                    {{ __('welcome.pdf text') }} <span class="fa fa-download"></span>
-                                </a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            @endif
+        <div class="container">           
             <div class="row mt-3">
                 <div class="col-12 col-sm-12 col-md-10 col-lg-10">
                     <div class="card  border-0 p-1 about-card">

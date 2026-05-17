@@ -6,6 +6,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="{{ url('favicon.ico') }}?v=2">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Our Services</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -17,7 +18,6 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <script src="https://kit.fontawesome.com/00b231478f.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="img/admin.png" type="image/x-icon">
     <style>
         .hovereffect1:hover {
             background-color: var(--golden-color) !important;

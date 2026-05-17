@@ -16,6 +16,8 @@ class Social extends Model
         'twitter',
         'facebook',
         'instagram',
-        'whatsapp'
+        'whatsapp',
+        'tiktok',
+        'whatsapp_url',
     ];
 }

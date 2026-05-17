@@ -6,6 +6,7 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="{{ url('favicon.ico') }}?v=2">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact Us</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -20,7 +21,6 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <script src="https://kit.fontawesome.com/00b231478f.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="img/admin.png" type="image/x-icon">
     <link
   href="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css"
   rel="stylesheet"
@@ -180,6 +180,14 @@
     </script>
     <script>
         mapboxgl.accessToken = '{{ env("MAPBOX_TOKEN") }}';
+
+        // Enable Arabic (RTL) text support on the map
+        mapboxgl.setRTLTextPlugin(
+            'https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.2.3/mapbox-gl-rtl-text.js',
+            null,
+            true
+        );
+
         var meccaCoordinates = [{{ $callus->long }},{{ $callus->lat }}]; // Coordinates for Mecca (Makkah), Saudi Arabia
         var map = new mapboxgl.Map({
             container: 'map',
